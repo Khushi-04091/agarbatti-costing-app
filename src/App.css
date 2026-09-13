@@ -6701,3 +6701,59 @@ input[type="number"] {
     height: 240px !important;
   }
 }
+/* ============================================================
+   FINAL LAYOUT FIX
+   Keeps main content clear of the fixed sidebar
+   ============================================================ */
+
+.main-area {
+  margin-left: 300px !important;
+  width: calc(100% - 300px) !important;
+  min-width: 0 !important;
+}
+
+/* Large desktop */
+@media (min-width: 1500px) {
+  .main-area {
+    margin-left: 300px !important;
+    width: calc(100% - 300px) !important;
+  }
+}
+
+/* Tablet / smaller desktop */
+@media (max-width: 1499px) and (min-width: 1001px) {
+  .sidebar {
+    width: 280px !important;
+    min-width: 280px !important;
+  }
+
+  .main-area {
+    margin-left: 280px !important;
+    width: calc(100% - 280px) !important;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1000px) and (min-width: 701px) {
+  .sidebar {
+    width: 235px !important;
+    min-width: 235px !important;
+  }
+
+  .main-area {
+    margin-left: 235px !important;
+    width: calc(100% - 235px) !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .sidebar {
+    display: none !important;
+  }
+
+  .main-area {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+}
