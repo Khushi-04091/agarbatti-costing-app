@@ -1,0 +1,117 @@
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+}
+/* Dipped Batti Costing */
+
+.dipped-container {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  margin-top: 30px;
+  overflow: hidden;
+}
+
+.dipped-header {
+  padding: 22px 25px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.dipped-header h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.dipped-header p {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.dipped-input-section {
+  padding: 25px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.dipped-input-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 7px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dipped-input-card span {
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.dipped-input-card strong {
+  font-size: 17px;
+}
+
+.dipped-calculation {
+  padding: 10px 25px 20px;
+}
+
+.dipped-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 14px;
+}
+
+.dipped-row.total {
+  background: #f9fafb;
+  padding: 16px;
+  border-radius: 7px;
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+.dipped-row.total strong {
+  font-size: 18px;
+}
+
+.dipped-result {
+  margin: 0 25px 25px;
+  padding: 22px;
+  border-radius: 8px;
+  background: #fffbea;
+  border: 1px solid #f1d36b;
+  text-align: center;
+}
+
+.dipped-result p {
+  color: #6b7280;
+  font-size: 13px;
+  margin-bottom: 7px;
+}
+
+.dipped-result h3 {
+  font-size: 25px;
+}
+
+@media (max-width: 900px) {
+  .dipped-input-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .dipped-input-section {
+    grid-template-columns: 1fr;
+  }
+}

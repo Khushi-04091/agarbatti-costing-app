@@ -1,0 +1,575 @@
+/* =========================================================
+   PACKAGING COSTING
+   ========================================================= */
+
+.packaging-page {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 4px 0 30px;
+  color: #173a34;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.packaging-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.packaging-title-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 15px;
+  background: #eaf5ee;
+  color: #24745f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.packaging-title h2 {
+  margin: 0 0 5px;
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: 750;
+  color: #123d35;
+}
+
+.packaging-title p {
+  margin: 0;
+  color: #71827c;
+  font-size: 14px;
+}
+
+/* =========================================================
+   CARDS
+   ========================================================= */
+
+.packaging-card {
+  background: #ffffff;
+  border: 1px solid #e1e9e5;
+  border-radius: 18px;
+  padding: 22px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 16px rgba(18, 61, 53, 0.045);
+}
+
+.packaging-card-header,
+.summary-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.packaging-card-header > div:first-child,
+.summary-heading > div:first-child {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.packaging-step-label {
+  min-width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: #123d35;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 750;
+  letter-spacing: 0.5px;
+}
+
+.packaging-card h3,
+.summary-heading h3 {
+  margin: 0 0 4px;
+  font-size: 17px;
+  font-weight: 750;
+  color: #173a34;
+}
+
+.packaging-card-header p,
+.summary-heading p {
+  margin: 0;
+  color: #7a8984;
+  font-size: 12.5px;
+}
+
+/* =========================================================
+   INPUTS
+   ========================================================= */
+
+.packaging-input-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.packaging-input-grid.two-columns {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.packaging-input-grid.three-columns {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.packaging-input label {
+  display: block;
+  margin-bottom: 7px;
+  color: #4e625c;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.packaging-input small {
+  display: block;
+  margin-top: 6px;
+  color: #87938f;
+  font-size: 10.5px;
+}
+
+.input-with-unit {
+  display: flex;
+  align-items: center;
+  height: 44px;
+  background: #f8faf9;
+  border: 1px solid #dce5e1;
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.input-with-unit:focus-within {
+  border-color: #24745f;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(36, 116, 95, 0.08);
+}
+
+.input-with-unit input {
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0 12px;
+  color: #173a34;
+  font-size: 14px;
+  font-weight: 650;
+}
+
+.input-with-unit span {
+  padding: 0 12px;
+  color: #71827c;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+  border-left: 1px solid #e0e7e4;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* =========================================================
+   INFO STRIP
+   ========================================================= */
+
+.packaging-info-strip {
+  margin-top: 16px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: #eaf5ee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.packaging-info-strip span {
+  color: #557069;
+  font-size: 12px;
+}
+
+.packaging-info-strip strong {
+  color: #176149;
+  font-size: 13px;
+}
+
+/* =========================================================
+   COST GRID
+   ========================================================= */
+
+.packaging-cost-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.packaging-cost-item {
+  background: #f7f9f8;
+  border: 1px solid #e5ebe8;
+  border-radius: 13px;
+  padding: 15px;
+}
+
+.packaging-cost-item span {
+  display: block;
+  color: #71827c;
+  font-size: 11px;
+  font-weight: 650;
+  margin-bottom: 7px;
+}
+
+.packaging-cost-item strong {
+  display: block;
+  color: #173a34;
+  font-size: 20px;
+  font-weight: 780;
+}
+
+.packaging-cost-item small {
+  display: block;
+  color: #8a9793;
+  font-size: 10px;
+  margin-top: 3px;
+}
+
+.packaging-cost-item.highlighted {
+  background: #eaf5ee;
+  border-color: #cce1d6;
+}
+
+.packaging-cost-item.highlighted strong {
+  color: #176149;
+}
+
+/* =========================================================
+   FORMULA
+   ========================================================= */
+
+.packaging-formula {
+  margin-top: 15px;
+  padding: 13px 15px;
+  background: #fbf7ed;
+  border: 1px solid #eee5d3;
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.packaging-formula span {
+  color: #81755f;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.packaging-formula strong {
+  color: #5e5545;
+  font-size: 12px;
+}
+
+/* =========================================================
+   MATERIAL SECTIONS
+   ========================================================= */
+
+.packaging-material {
+  border: 1px solid #e5ebe8;
+  border-radius: 14px;
+  padding: 17px;
+  margin-top: 13px;
+}
+
+.material-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 17px;
+}
+
+.material-number {
+  width: 32px;
+  height: 32px;
+  border-radius: 9px;
+  background: #f0f4f2;
+  color: #24745f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.material-heading h4 {
+  margin: 0 0 3px;
+  color: #173a34;
+  font-size: 14px;
+  font-weight: 750;
+}
+
+.material-heading p {
+  margin: 0;
+  color: #82908b;
+  font-size: 11px;
+}
+
+.material-result {
+  margin-left: auto;
+  text-align: right;
+}
+
+.material-result span {
+  display: block;
+  color: #82908b;
+  font-size: 9px;
+  margin-bottom: 2px;
+}
+
+.material-result strong {
+  color: #176149;
+  font-size: 17px;
+  font-weight: 780;
+}
+
+.material-calculation {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px dashed #dfe7e3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.material-calculation span {
+  color: #71827c;
+  font-size: 11px;
+}
+
+.material-calculation strong {
+  color: #3c5951;
+  font-size: 12px;
+}
+
+/* =========================================================
+   FINAL SUMMARY
+   ========================================================= */
+
+.packaging-summary-card {
+  background: #123d35;
+  color: #ffffff;
+  border-radius: 19px;
+  padding: 24px;
+  margin-top: 20px;
+  box-shadow: 0 10px 28px rgba(18, 61, 53, 0.16);
+}
+
+.packaging-summary-card .packaging-step-label {
+  background: rgba(255, 255, 255, 0.13);
+  color: #ffffff;
+}
+
+.packaging-summary-card h3 {
+  color: #ffffff;
+}
+
+.packaging-summary-card .summary-heading p {
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.summary-pack-badge {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 9px;
+  padding: 8px 12px;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.summary-lines {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 7px 0;
+}
+
+.summary-lines > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 0;
+}
+
+.summary-lines span {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+}
+
+.summary-lines strong {
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.packaging-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.packaging-total span {
+  display: block;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 750;
+}
+
+.packaging-total small {
+  display: block;
+  margin-top: 4px;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 10px;
+}
+
+.packaging-total > strong {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+/* =========================================================
+   COST FLOW
+   ========================================================= */
+
+.packaging-cost-flow {
+  margin-top: 16px;
+  background: #ffffff;
+  border: 1px solid #e1e9e5;
+  border-radius: 16px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  box-shadow: 0 4px 16px rgba(18, 61, 53, 0.04);
+}
+
+.flow-item {
+  text-align: center;
+  min-width: 130px;
+}
+
+.flow-item span,
+.flow-final span {
+  display: block;
+  color: #71827c;
+  font-size: 10px;
+  margin-bottom: 4px;
+}
+
+.flow-item strong {
+  color: #173a34;
+  font-size: 17px;
+  font-weight: 780;
+}
+
+.flow-plus,
+.flow-equals {
+  color: #9aa7a2;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.flow-final {
+  min-width: 150px;
+  padding: 9px 15px;
+  background: #eaf5ee;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.flow-final span {
+  color: #4e7669;
+}
+
+.flow-final strong {
+  color: #176149;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 850px) {
+  .packaging-page {
+    padding: 0 4px 25px;
+  }
+
+  .packaging-cost-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .packaging-input-grid.three-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .packaging-cost-flow {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 620px) {
+  .packaging-card {
+    padding: 17px;
+  }
+
+  .packaging-title h2 {
+    font-size: 21px;
+  }
+
+  .packaging-input-grid.two-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .material-heading {
+    align-items: flex-start;
+  }
+
+  .material-result {
+    margin-left: auto;
+  }
+
+  .packaging-formula {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .summary-heading {
+    gap: 10px;
+  }
+
+  .packaging-total > strong {
+    font-size: 27px;
+  }
+
+  .packaging-cost-flow {
+    gap: 8px;
+  }
+
+  .flow-item {
+    min-width: 90px;
+  }
+}

@@ -1,0 +1,727 @@
+/* =========================================
+   RAW BATTI MODULE
+========================================= */
+
+.raw-batti-module {
+  width: 100%;
+  color: #173a34;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.raw-module-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.raw-title-area {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.raw-title-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 13px;
+  background: #eaf5ee;
+  color: #24745f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.raw-title-icon svg {
+  width: 25px;
+  height: 25px;
+}
+
+.raw-module-label {
+  display: block;
+  color: #24745f;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+  margin-bottom: 5px;
+}
+
+.raw-module-header h2 {
+  margin: 0;
+  font-size: 21px;
+  letter-spacing: -0.5px;
+}
+
+.raw-module-header p {
+  margin: 4px 0 0;
+  color: #71827c;
+  font-size: 11px;
+}
+
+.raw-cost-badge {
+  padding: 11px 16px;
+  border-radius: 11px;
+  background: #eaf5ee;
+  color: #173a34;
+  min-width: 125px;
+}
+
+.raw-cost-badge span {
+  display: block;
+  color: #71827c;
+  font-size: 7px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.raw-cost-badge strong {
+  font-size: 16px;
+  margin-right: 3px;
+}
+
+.raw-cost-badge small {
+  color: #71827c;
+  font-size: 8px;
+}
+
+
+/* =========================================
+   COMMON CARD
+========================================= */
+
+.raw-card {
+  background: white;
+  border: 1px solid #e3e9e6;
+  border-radius: 17px;
+  padding: 23px;
+  margin-bottom: 18px;
+  box-shadow: 0 7px 25px rgba(18, 61, 53, 0.045);
+}
+
+.raw-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.raw-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.raw-section-number {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: #123d35;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.raw-section-heading h3 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.raw-section-heading p {
+  margin: 3px 0 0;
+  color: #71827c;
+  font-size: 9px;
+}
+
+
+/* =========================================
+   PERCENTAGE STATUS
+========================================= */
+
+.raw-percentage-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 11px;
+  border-radius: 20px;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.raw-percentage-status span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.raw-percentage-status.valid {
+  color: #24745f;
+  background: #eaf5ee;
+}
+
+.raw-percentage-status.invalid {
+  color: #a56717;
+  background: #fff4e5;
+}
+
+
+/* =========================================
+   INPUT GRID
+========================================= */
+
+.raw-input-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 11px;
+}
+
+.raw-input-card {
+  min-height: 108px;
+  border: 1px solid #e4eae7;
+  background: #fbfcfc;
+  border-radius: 11px;
+  padding: 13px;
+}
+
+.raw-input-card.managed {
+  background: #f1f7f3;
+  border-color: #dceae3;
+}
+
+.raw-input-card label {
+  display: block;
+  color: #82918c;
+  font-size: 7px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.input-description {
+  display: block;
+  margin-top: 4px;
+  color: #71827c;
+  font-size: 8px;
+}
+
+.raw-input-wrapper {
+  position: relative;
+  margin-top: 10px;
+}
+
+.raw-input-wrapper > span {
+  position: absolute;
+  left: 9px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #71827c;
+  font-size: 10px;
+}
+
+.raw-input-wrapper input {
+  width: 100%;
+  height: 35px;
+  border: 1px solid #dce5e1;
+  border-radius: 8px;
+  background: white;
+  color: #173a34;
+  font-size: 11px;
+  outline: none;
+  padding: 0 31px 0 9px;
+}
+
+.raw-input-wrapper > span + input {
+  padding-left: 23px;
+}
+
+.raw-input-wrapper input:focus {
+  border-color: #24745f;
+  box-shadow: 0 0 0 3px rgba(36, 116, 95, 0.07);
+}
+
+.raw-input-wrapper small {
+  position: absolute;
+  right: 9px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #71827c;
+  font-size: 8px;
+}
+
+.managed-value {
+  margin-top: 10px;
+  height: 35px;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.managed-value strong {
+  font-size: 15px;
+}
+
+.managed-value small {
+  color: #71827c;
+  font-size: 8px;
+}
+
+
+/* =========================================
+   WARNING
+========================================= */
+
+.raw-warning {
+  margin-top: 12px;
+  padding: 10px 12px;
+  border-radius: 9px;
+  background: #fff9ef;
+  border: 1px solid #f0dfc2;
+  color: #80551d;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 9px;
+}
+
+.raw-warning > div {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #efc476;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
+
+.raw-warning strong {
+  font-weight: 800;
+}
+
+
+/* =========================================
+   MATERIAL COST
+========================================= */
+
+.raw-cost-grid {
+  display: grid;
+  grid-template-columns: 1fr 30px 1fr 30px 1.15fr;
+  gap: 7px;
+  align-items: stretch;
+}
+
+.raw-cost-item,
+.raw-material-total {
+  min-height: 95px;
+  border: 1px solid #e1e8e4;
+  border-radius: 11px;
+  background: #fbfcfc;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.raw-cost-icon {
+  width: 37px;
+  height: 37px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.raw-cost-icon.bamboo {
+  color: #8b713b;
+  background: #f4f0e4;
+}
+
+.raw-cost-icon.premix {
+  color: #24745f;
+  background: #eaf5ee;
+}
+
+.raw-cost-info span,
+.raw-material-total span {
+  display: block;
+  color: #82918c;
+  font-size: 7px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+}
+
+.raw-cost-info strong {
+  display: block;
+  margin-top: 4px;
+  font-size: 16px;
+}
+
+.raw-cost-info small,
+.raw-material-total small {
+  display: block;
+  margin-top: 2px;
+  color: #71827c;
+  font-size: 8px;
+}
+
+.raw-cost-operator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9aa9a4;
+  font-size: 16px;
+}
+
+.raw-material-total {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background: #eaf5ee;
+  border-color: #d5e7dc;
+}
+
+.raw-material-total strong {
+  margin-top: 4px;
+  color: #123d35;
+  font-size: 21px;
+}
+
+
+/* =========================================
+   EXPENSES
+========================================= */
+
+.expense-total-badge {
+  text-align: right;
+}
+
+.expense-total-badge span {
+  display: block;
+  color: #82918c;
+  font-size: 7px;
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+
+.expense-total-badge strong {
+  font-size: 17px;
+}
+
+.expense-total-badge small {
+  color: #71827c;
+  font-size: 8px;
+  margin-left: 3px;
+}
+
+.expense-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 9px;
+}
+
+.expense-item {
+  border: 1px solid #e5ebe8;
+  border-radius: 10px;
+  padding: 13px;
+  background: #fbfcfc;
+}
+
+.expense-item span {
+  display: block;
+  color: #82918c;
+  font-size: 7px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+}
+
+.expense-item strong {
+  font-size: 14px;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.expense-item small {
+  color: #71827c;
+  font-size: 8px;
+  margin-left: 3px;
+}
+
+
+/* =========================================
+   CALCULATION
+========================================= */
+
+.raw-calculation-card {
+  background: #f9fbfa;
+  border: 1px solid #dfe8e4;
+  border-radius: 16px;
+  padding: 21px;
+  margin-bottom: 18px;
+}
+
+.raw-calculation-header {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 17px;
+}
+
+.raw-equals-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 9px;
+  background: #123d35;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.raw-calculation-header h3 {
+  margin: 0;
+  font-size: 13px;
+}
+
+.raw-calculation-header p {
+  margin: 3px 0 0;
+  color: #71827c;
+  font-size: 9px;
+}
+
+.raw-calculation-flow {
+  display: grid;
+  grid-template-columns: 1fr 28px 1fr 28px 1fr 32px 1.2fr;
+  gap: 7px;
+  align-items: stretch;
+}
+
+.raw-flow-box,
+.raw-flow-final {
+  min-height: 91px;
+  border: 1px solid #dfe7e3;
+  border-radius: 10px;
+  background: white;
+  padding: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.raw-flow-box span,
+.raw-flow-final span {
+  color: #82918c;
+  font-size: 7px;
+  font-weight: 800;
+  letter-spacing: 0.9px;
+}
+
+.raw-flow-box strong {
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+.raw-flow-box small,
+.raw-flow-final small {
+  margin-top: 2px;
+  color: #71827c;
+  font-size: 8px;
+}
+
+.raw-flow-plus,
+.raw-flow-equals {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #91a29c;
+  font-size: 17px;
+}
+
+.raw-flow-final {
+  background: #123d35;
+  border-color: #123d35;
+  color: white;
+}
+
+.raw-flow-final span,
+.raw-flow-final small {
+  color: #a9c8be;
+}
+
+.raw-flow-final strong {
+  margin-top: 5px;
+  font-size: 23px;
+}
+
+.raw-formula {
+  margin-top: 12px;
+  border: 1px dashed #d5dfdb;
+  border-radius: 8px;
+  background: white;
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #71827c;
+  font-size: 9px;
+}
+
+.raw-formula strong {
+  color: #24745f;
+}
+
+
+/* =========================================
+   FINAL RESULT
+========================================= */
+
+.raw-final-result {
+  min-height: 91px;
+  border-radius: 16px;
+  padding: 19px 23px;
+  background: #123d35;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 10px 25px rgba(18, 61, 53, 0.14);
+}
+
+.raw-result-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.raw-result-check {
+  width: 43px;
+  height: 43px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.11);
+  color: #c4e5d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.raw-result-left span {
+  display: block;
+  color: #9fc2b7;
+  font-size: 7px;
+  letter-spacing: 1.3px;
+  font-weight: 800;
+}
+
+.raw-result-left h3 {
+  margin: 4px 0 0;
+  font-size: 13px;
+}
+
+.raw-result-price {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+
+.raw-result-price strong {
+  font-size: 31px;
+  letter-spacing: -1px;
+}
+
+.raw-result-price span {
+  color: #a9c8be;
+  font-size: 10px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .raw-input-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .raw-cost-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .raw-cost-operator {
+    display: none;
+  }
+
+  .expense-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .raw-calculation-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .raw-flow-plus,
+  .raw-flow-equals {
+    display: none;
+  }
+}
+
+
+@media (max-width: 700px) {
+
+  .raw-module-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .raw-card-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .raw-input-grid,
+  .expense-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .raw-final-result {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .raw-card,
+  .raw-calculation-card {
+    padding: 15px;
+  }
+
+  .raw-module-header h2 {
+    font-size: 18px;
+  }
+
+  .raw-formula {
+    flex-wrap: wrap;
+    padding: 8px;
+  }
+}
